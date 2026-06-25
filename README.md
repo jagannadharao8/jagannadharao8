@@ -72,6 +72,13 @@ I am a passionate **AI & ML Engineer** based in Visakhapatnam, India. My core fo
 
 ---
 
+### 🐍 Contribution Graph Animation
+<div align="center">
+  <img src="https://raw.githubusercontent.com/jagannadharao8/jagannadharao8/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</div>
+
+---
+
 ### 📈 Real-time Analytics
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=jagannadharao8&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%" />
