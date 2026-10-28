@@ -8,7 +8,7 @@ I build Python applications using machine learning, retrieval and APIs. I am see
 ## Selected projects
 | Project | Work demonstrated | Current verification |
 | --- | --- | --- |
-| [AI Research Assistant](https://github.com/jagannadharao8/ai-research-agent) | Python, TF-IDF and optional FAISS retrieval, document extraction, citation review, Streamlit | Python/UI regressions; live answers, web retrieval and report downloads verified; document-isolation verification recorded in the audit |
+| [AI Research Assistant](https://github.com/jagannadharao8/ai-research-agent) | Python, TF-IDF and optional FAISS retrieval, document extraction, citation review, Streamlit | 26 Python/UI tests; live answers, web retrieval, report downloads and two-document isolation verified |
 | [Misinformation Evidence Assistant](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI) | FastAPI, model integrations, evidence retrieval, text attribution | 17 offline policy/API/configuration tests passed; deployed text/PDF/input checks verified; cloud vision requires working provider access |
 | [Income Classification Explorer](https://github.com/jagannadharao8/Employee-Salary-Prediction) | scikit-learn pipelines, XGBoost, cross-validation, SHAP | Corrected census-data split: ROC-AUC 0.9207, accuracy 85.29% on 9,758 held-out rows; artifacts verified |
 

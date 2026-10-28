@@ -10,8 +10,8 @@ Scope: the five connected repositories owned by jagannadharao8: research assista
 | Markdown, Word and PDF downloads | Passed; DOCX and PDF text extraction checked |
 | Clear session | Chat and last report cleared |
 | Web retrieval | Answer, web mode and citation rendered |
-| Document A | Correct synthetic fact returned using TF-IDF; numeric citation formatting correction prepared |
-| Two-document isolation after citation correction | Final hosted verification pending |
+| Document A | Correct synthetic fact and numeric citation returned using TF-IDF |
+| Two-document isolation | Passed: the same question returned AMBER7319 for document A and COBALT8426 for document B, with matching current-document citations |
 | Provider errors | Sanitised failures; empty/truncated answers are not treated as successful cached reports |
 | Shared cache | Replaced in the UI with a bounded session-private cache keyed by query, document digest, recent conversation and model |
 | Code execution | Disabled in the legacy subprocess helper; not offered by the interface |
@@ -22,8 +22,9 @@ GPT-OSS calls reserve reasoning/completion capacity, use low reasoning effort an
 
 Evidence:
 - [Real application-query provider checks](https://github.com/jagannadharao8/ai-research-agent/actions/runs/40712070700).
-- [25-test lexical/semantic-path regression suite](https://github.com/jagannadharao8/ai-research-agent/actions/runs/40715079641).
-- [Hosted answer, download, web and first-document check](https://github.com/jagannadharao8/jagannadharao8.github.io/actions/runs/40716652423). Its overall result failed at citation format; the individual completed checks above are recorded in its logs.
+- [26-test current regression/UI suite](https://github.com/jagannadharao8/ai-research-agent/actions/runs/40717469674).
+- [Passed complete hosted check: answers, downloads, web, both documents, fake-news input policy and current résumé](https://github.com/jagannadharao8/jagannadharao8.github.io/actions/runs/40718342550).
+- [Hosted test implementation](https://github.com/jagannadharao8/jagannadharao8.github.io/blob/58c72b4577c86207c1971194691eb5c60c8a4357/scripts/deep-check.cjs).
 
 ## Misinformation evidence assistant
 
@@ -87,7 +88,7 @@ Automated checks covered 100 source/configuration text files across the four cod
 
 ## Remaining actions
 
-1. Finish the hosted two-document check after numeric citation normalisation; record its outcome here.
-2. Repair Gemini provider credential/account access in the existing Space, then verify actual image interpretation.
-3. Update account bio/pins manually if desired; the profile README is already published.
+1. Repair Gemini provider credential/account access in the existing Space, then verify actual image interpretation.
+2. Update account bio/pins manually if desired; the profile README is already published.
+3. Document dataset source/licensing provenance independently.
 4. Keep interview claims tied to the current source, evaluation protocol and verified runtime behavior.
