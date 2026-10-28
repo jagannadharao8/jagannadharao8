@@ -8,9 +8,9 @@ I build Python applications using machine learning, retrieval and APIs. I am see
 ## Selected projects
 | Project | Work demonstrated | Current verification |
 | --- | --- | --- |
-| [AI Research Assistant](https://github.com/jagannadharao8/ai-research-agent) | Python, FAISS retrieval, document extraction, citation review, Streamlit | Reliability fixes are under review; live provider access must be checked |
-| [Misinformation Evidence Assistant](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI) | FastAPI, model integrations, evidence retrieval, text attribution | Decision-policy corrections are under review; not a guaranteed fact checker |
-| [Income Classification Explorer](https://github.com/jagannadharao8/Employee-Salary-Prediction) | scikit-learn pipelines, XGBoost, cross-validation, SHAP | Evaluation corrections are under review; updated benchmark results are pending |
+| [AI Research Assistant](https://github.com/jagannadharao8/ai-research-agent) | Python, FAISS retrieval, document extraction, citation review, Streamlit | 13 reliability regressions and CI passed; live provider access must be checked |
+| [Misinformation Evidence Assistant](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI) | FastAPI, model integrations, evidence retrieval, text attribution | 15 offline policy/API tests passed with mocked provider boundaries; live deployment verification pending |
+| [Income Classification Explorer](https://github.com/jagannadharao8/Employee-Salary-Prediction) | scikit-learn pipelines, XGBoost, cross-validation, SHAP | Corrected census-data split: ROC-AUC 0.9207, accuracy 85.29% on 9,758 held-out rows; artifacts verified |
 
 ## Skills
 Python, SQL, C · Pandas, NumPy, scikit-learn, XGBoost, TensorFlow · FastAPI, Streamlit, Git, Docker · FAISS, sentence embeddings, RAG and model API integration.
