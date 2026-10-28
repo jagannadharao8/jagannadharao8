@@ -8,8 +8,8 @@ I build Python applications using machine learning, retrieval and APIs. I am see
 ## Selected projects
 | Project | Work demonstrated | Current verification |
 | --- | --- | --- |
-| [AI Research Assistant](https://github.com/jagannadharao8/ai-research-agent) | Python, FAISS retrieval, document extraction, citation review, Streamlit | 23 Python/UI tests passed; three real application routing-and-answer queries passed; hosted document/web paths are checked separately |
-| [Misinformation Evidence Assistant](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI) | FastAPI, model integrations, evidence retrieval, text attribution | 15 offline policy/API tests passed; deployed unsupported-claim uncertainty, input validation and disabled shared history verified |
+| [AI Research Assistant](https://github.com/jagannadharao8/ai-research-agent) | Python, TF-IDF and optional FAISS retrieval, document extraction, citation review, Streamlit | 26 Python/UI tests; live answers, web retrieval, report downloads and two-document isolation verified |
+| [Misinformation Evidence Assistant](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI) | FastAPI, model integrations, evidence retrieval, text attribution | 17 offline policy/API/configuration tests passed; deployed text/PDF/input checks verified; cloud vision requires working provider access |
 | [Income Classification Explorer](https://github.com/jagannadharao8/Employee-Salary-Prediction) | scikit-learn pipelines, XGBoost, cross-validation, SHAP | Corrected census-data split: ROC-AUC 0.9207, accuracy 85.29% on 9,758 held-out rows; artifacts verified |
 
 ## Skills
@@ -25,3 +25,6 @@ Python, SQL, C · Pandas, NumPy, scikit-learn, XGBoost, TensorFlow · FastAPI, S
 - AI/ML virtual programme — EduSkills, April–June 2024.
 
 Programme names and certificates should be read as training-provider credentials, not direct employment at a sponsoring technology company. Project repositories document implementation; performance claims require reproducible evaluation evidence.
+
+## Verification evidence
+[Project audit and remaining limitations — 28 October 2026](docs/verification-2026-10-28.md).
