@@ -1,5 +1,7 @@
 # Project verification — 28 October 2026
 
+Update, 23 November: [dataset provenance was verified](verification-2026-11-23.md), and [cloud vision was restored through Groq](vision-restoration-2026-11-23.md). The entries below preserve the original October audit; the linked follow-ups supersede its dataset/vision blockers.
+
 Scope: the five connected repositories owned by jagannadharao8: research assistant, misinformation assistant, income classifier, portfolio and profile. The deleted photo-studio project was excluded.
 
 ## Research assistant
