@@ -28,16 +28,20 @@ A fresh owner-side check found the Space running on cpu-basic. Its health endpoi
 
 [Live runtime and image request evidence](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45198018162).
 
-The vision wrapper now classifies provider failures into controlled categories, status codes and exception types while omitting raw provider details. Nineteen API/configuration regressions passed, including checks that private error markers are excluded from logs.
+The vision wrapper now classifies provider failures into controlled categories, status codes and exception types while omitting raw provider details. Twenty-one API/configuration/SDK regressions passed, including checks that private error markers are excluded from logs, recovery after one HTTP 503, two-attempt exhaustion, and single-attempt handling of credential errors.
 
-- [19-test verification](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45198845539).
+- [21-test API and real-SDK transport verification](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45200841990).
 - [Published diagnostic change](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/pull/4).
 
-Final deployed-source identity and provider-category verification are pending. No secret value or raw owner runtime log is included in this report.
+The ready deployment was confirmed to contain the matching GitHub source. Its fresh image call produced HTTP 503 from Gemini. This current observation is a service-availability failure; it does not establish the credential rejection recorded in October. [Current diagnostic evidence](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45200039772).
+
+A further [published change](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/pull/5) sets a 20-second SDK request timeout and two total attempts with backoff for transient server errors. Credential failures remain single-attempt, and exhausted requests retain the Uncertain fallback. The final live check after that deployment is pending.
+
+No secret value or raw owner runtime log is included in this report.
 
 ## Scope and remaining work
 
 The October research-agent, portfolio and résumé verification remains recorded in the original audit; it is not presented here as a fresh November end-to-end test. The current task focused on the unresolved dataset and vision items.
 
-1. Identify and repair the current vision provider failure, then verify actual image interpretation.
+1. Complete the post-retry live image check; persistent Gemini 503 failures require restored provider availability rather than an assumed key replacement.
 2. Account bio and pinned repositories still require GitHub's account interface because the connected repository tools do not expose those editing controls.
