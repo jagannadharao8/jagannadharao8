@@ -18,7 +18,21 @@ Twenty-seven API/configuration/SDK tests passed. They cover both public predicti
 
 [Passing CI and UI checks](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45208092078).
 
-Live verification of the matching deployment, image-only input and matching/mismatching text-image inputs is pending. Offline/mock-provider tests alone do not demonstrate production provider access.
+## Live result: vision restored
+
+The deployed source matched the merged GitHub source, health returned HTTP 200, and the image-assessment UI panel was published. The existing Groq credential was configured; no new key was created.
+
+| Synthetic input | HTTP | Vision available | Model assessment | Verdict/card agreement |
+| --- | --- | --- | --- | --- |
+| Image-only verification card | 200 | Yes | mismatched | Both Uncertain |
+| Verification card with its matching caption | 200 | Yes | consistent | Both Uncertain |
+| Verification card described as a crowded beach | 200 | Yes | mismatched | Both Uncertain |
+
+All three used Groq with qwen/qwen3.8-27b. [Successful deployed verification](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45208623868).
+
+These synthetic checks demonstrate functioning provider access and basic image/text consistency behavior, not a benchmark of image authenticity or misinformation accuracy. The top-level conservative evidence policy still requires retrieved evidence for a definitive factual verdict.
+
+The previously observed Gemini 503 is bypassed by the primary Groq path; Gemini remains optional fallback.
 
 ## Account settings
 

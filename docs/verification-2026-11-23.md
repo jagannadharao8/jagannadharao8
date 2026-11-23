@@ -1,5 +1,7 @@
 # Verification follow-up — 23 November 2026
 
+Update: [vision is now restored through the validated Groq path](vision-restoration-2026-11-23.md). The service-error observations below describe the state before that restoration.
+
 This follow-up continues the [28 October audit](verification-2026-10-28.md). It records new provenance work and a fresh check of the unavailable vision integration.
 
 ## Completed: dataset provenance
@@ -43,5 +45,4 @@ No secret value or raw owner runtime log is included in this report.
 
 The October research-agent, portfolio and résumé verification remains recorded in the original audit; it is not presented here as a fresh November end-to-end test. The current task focused on the unresolved dataset and vision items.
 
-1. Retest actual image interpretation when the Gemini service is available, or validate an accessible alternative model/provider. The current 503 result does not justify assuming the configured key is invalid.
-2. Account bio and pinned repositories can be adjusted in GitHub's account interface. The connected repository tools do not expose those editing controls, so no account-level changes were made in this follow-up.
+The alternative provider has now been validated on the deployed image-only and text/image paths. Account bio and pins remain prepared in the [account-update plan](github-account-update-plan.md), awaiting authenticated browser controls.
