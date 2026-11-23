@@ -35,7 +35,7 @@ The vision wrapper now classifies provider failures into controlled categories, 
 
 The ready deployment was confirmed to contain the matching GitHub source. Its fresh image call produced HTTP 503 from Gemini. This current observation is a service-availability failure; it does not establish the credential rejection recorded in October. [Current diagnostic evidence](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45200039772).
 
-A further [published change](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/pull/5) sets a 20-second SDK request timeout and two total attempts with backoff for transient server errors. Credential failures remain single-attempt, and exhausted requests retain the Uncertain fallback. The final live check after that deployment is pending.
+A further [published change](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/pull/5) sets a 20-second SDK request timeout and two total attempts with backoff for transient server errors. Credential failures remain single-attempt, and exhausted requests retain the Uncertain fallback. The final post-deployment check confirmed matching GitHub/Space source, RUNNING state, health HTTP 200 and image-request HTTP 200. Gemini still returned HTTP 503 after the bounded retry. Vision remained unavailable, and the verdict/evidence card both returned Uncertain. [Final live verification](https://github.com/jagannadharao8/Fake-news-detection-using-GENAI-ML-DL-XAI/actions/runs/45201130884).
 
 No secret value or raw owner runtime log is included in this report.
 
@@ -43,5 +43,5 @@ No secret value or raw owner runtime log is included in this report.
 
 The October research-agent, portfolio and résumé verification remains recorded in the original audit; it is not presented here as a fresh November end-to-end test. The current task focused on the unresolved dataset and vision items.
 
-1. Complete the post-retry live image check; persistent Gemini 503 failures require restored provider availability rather than an assumed key replacement.
-2. Account bio and pinned repositories still require GitHub's account interface because the connected repository tools do not expose those editing controls.
+1. Retest actual image interpretation when the Gemini service is available, or validate an accessible alternative model/provider. The current 503 result does not justify assuming the configured key is invalid.
+2. Account bio and pinned repositories can be adjusted in GitHub's account interface. The connected repository tools do not expose those editing controls, so no account-level changes were made in this follow-up.
